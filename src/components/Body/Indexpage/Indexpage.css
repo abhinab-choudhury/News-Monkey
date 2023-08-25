@@ -1,0 +1,63 @@
+.indexpage {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    height: 75vh;
+}
+h1{
+    padding: 10px;
+    margin: 20px;
+}
+p{
+    margin: 10px;
+    padding: 20px;
+}
+li {
+    padding-bottom: 2px;
+    list-style: none;
+}
+h3{
+    font-weight: 700;
+    padding:10px;
+    margin: 20px;
+}
+strong {
+    margin-right: 10px;
+}
+
+.text-muted {
+    padding: 10px;
+    margin: 20px;
+}
+@media screen and (max-width:1200px) {
+    .footer-section {
+        margin-top: 170px;
+    }
+}
+@media screen and (max-width: 984px) {
+    .footer-section {
+        margin-top: 270px;
+    }
+}
+@media screen and (max-width: 764px) {
+    .footer-section {
+        margin-top: 430px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .footer-section {
+        margin-top: 580px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .footer-section {
+        margin-top: 700px;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .footer-section {
+        margin-top: 1000px;
+    }
+}

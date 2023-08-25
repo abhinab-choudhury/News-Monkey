@@ -1,13 +1,25 @@
 import './App.css'
-import React, { Component } from 'react'
-import Navbar from './components/Header/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
+import Navbar from './components/Navbar/Navbar'
+import Indexpage from './components/Body/Indexpage/Indexpage'
+import NewsBody from './components/Body/NewsBody/NewsBody'
+import About from './components/Body/About/About'
 
-export default class App extends Component {
-  render() {
+function App() {
     return (
-      <div>
-        <Navbar />
-      </div>
+        <>
+            <BrowserRouter>
+                <Navbar />
+                    <Routes>
+                        <Route exact path='/' element={<Indexpage />} />
+                        <Route exact path='/news' element={<NewsBody />} />
+                        <Route exact path='/about' element={<About />} />
+                    </Routes>
+                <Footer />
+            </BrowserRouter>
+        </>
     )
-  }
 }
+
+export default App
