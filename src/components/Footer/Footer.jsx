@@ -45,8 +45,7 @@ export default class Footer extends Component {
     
 
                 <div className="text-center p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
-                © 2020 Copyright:
-                <a className="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                    Version 2.0.3
                 </div>
             </footer>
             

@@ -22,16 +22,27 @@ News Monkey is a user-friendly news application that provides you with the lates
 ## Installation
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/abhinab-choudhury/News-Monkey.git
+   ```
+
 2. Navigate to the project directory:
+
    ```sh
     cd News-Monkey
+   ```
+
 3. Install dependencies:
+
    ```sh
-    npm install
-5.  Start the development server:
+    npm install 
+   ```
+
+4. Start the development server:
+
     ```sh
       npm run dev
-6. Open your browser and visit: `http://127.0.0.1:5173/`
-      
+   ```
+
+5. Open your browser and visit: `http://127.0.0.1:5173/`
