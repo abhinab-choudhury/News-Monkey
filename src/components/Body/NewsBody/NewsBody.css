@@ -6,6 +6,11 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+
+.card-footer {
+    font-size: 13px;
+}
+
 @media screen and (max-width:1370px) {
     .card-grid {
         display: grid;

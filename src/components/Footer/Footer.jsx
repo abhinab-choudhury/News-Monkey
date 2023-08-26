@@ -29,7 +29,7 @@ export default class Footer extends Component {
                         <a href="https://www.instagram.com/_abhinab_choudhury_/">Instagram</a>
                         </li>
                         <li>
-                        <a href="https://twitter.com/abhinabc_"> <i class="fa fa-twitter"></i>Twitter</a>
+                        <a href="https://twitter.com/abhinabc_">Twitter</a>
                         </li>
                         <li>
                         <a href="https://www.linkedin.com/in/abhinab-choudhury-18022822b/"> LinkedIn</a>
@@ -45,7 +45,7 @@ export default class Footer extends Component {
     
 
                 <div className="text-center p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
-                    Version 2.0.3
+                    Version 3.2.1
                 </div>
             </footer>
             

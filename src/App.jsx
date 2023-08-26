@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Indexpage from './components/Body/Indexpage/Indexpage'
 import NewsBody from './components/Body/NewsBody/NewsBody'
 import About from './components/Body/About/About'
+import Toptrending from './components/Body/NewsBody/Toptrending'
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Navbar />
                     <Routes>
                         <Route exact path='/' element={<Indexpage />} />
+                        <Route exact path='/trending_news' element={<Toptrending />} />
                         <Route exact path='/news' element={<NewsBody />} />
                         <Route exact path='/about' element={<About />} />
                     </Routes>

@@ -18,6 +18,9 @@ export default class Navbar extends Component {
                         <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
+                        <Link className="nav-link" to="/trending_news">Top Trending News</Link>
+                        </li>
+                        <li className="nav-item">
                         <Link className="nav-link" to="/news">News</Link>
                         </li>
                         <li className="nav-item">
