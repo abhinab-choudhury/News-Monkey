@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './NewsBody.css'
 import NewsCard from '../NewsCard/NewsCard'
+import Spinner from '../Spinner/Spinner'
 
 export default class NewsBody extends Component {
     data = {
@@ -9,318 +10,319 @@ export default class NewsBody extends Component {
         "articles": [
             {
                 "source": {
-                    "id": "bbc-news",
-                    "name": "BBC News"
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
                 },
-                "author": "https://www.facebook.com/bbcnews",
-                "title": "Russian general who ran Ukraine war fired - report",
-                "description": "Sergei Surovikin was head of aerospace forces but has not been since a failed mutiny in June.",
-                "url": "https://www.bbc.co.uk/news/world-europe-66590916",
-                "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/2D9D/production/_130877611_0d75f3577273ac32cff0eae3103ecfc2bc17b3510_25_4738_26661000x563.jpg",
-                "publishedAt": "2023-08-23T12:13:29Z",
-                "content": "One of Russia's leading military figures, Gen Sergei Surovikin, has reportedly lost his job as air force chief after weeks of speculation his disappearance from public view.\r\nRia Novosti agency said … [+2459 chars]"
+                "author": "Ron Miller",
+                "title": "Splinter group officially launches OpenTF fork of HashiCorp Terraform | TechCrunch",
+                "description": "A group that formed recently in reaction to HashiCorp's open source license change, announced it was officially launching on Friday.",
+                "url": "https://techcrunch.com/2023/08/28/splinter-group-officially-launches-opentf-fork-of-hashicorp-terraform/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-173063503.jpg?resize=1200,800",
+                "publishedAt": "2023-08-28T13:20:53Z",
+                "content": "Earlier this month HashiCorp announced that it was changing the open source license it uses for Terraform and its other developer tools. The change triggered an uproar in the open source community. O… [+2810 chars]"
             },
             {
                 "source": {
-                    "id": null,
-                    "name": "Lifehacker.com"
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
                 },
-                "author": "Amy Drader",
-                "title": "Four Questions to Ask Yourself Before Changing Careers",
-                "description": "Dreaming of a career change is a near universal experience for anyone with a job, typically arising in the wake of repeated experiences with unfulfilling work, lackluster bosses, or a sense of general dissatisfaction with your chosen field. The result might b…",
-                "url": "https://lifehacker.com/four-questions-to-ask-yourself-before-changing-careers-1850679687",
-                "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/49af78954b706999bdc1470f81d78fc8.jpg",
-                "publishedAt": "2023-07-27T14:30:00Z",
-                "content": "Dreaming of a career change is a near universal experience for anyone with a job, typically arising in the wake of repeated experiences with unfulfilling work, lackluster bosses, or a sense of genera… [+5119 chars]"
+                "author": "Jagmeet Singh",
+                "title": "India to launch solar observatory mission Aditya-L1 this week | TechCrunch",
+                "description": "India is launching its first space-based solar observatory mission called Aditya-L1 to study the sun — just days after the successful landing of the India is launching its first space-based solar observatory mission called Aditya-L1 to study the sun — just da…",
+                "url": "https://techcrunch.com/2023/08/28/aditya-l1-launch-solar-observatory-mission/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/isro-aditya-l1-space-based-solar-observatory-mission.jpg?w=1200",
+                "publishedAt": "2023-08-28T13:08:13Z",
+                "content": "India is launching its first space-based solar observatory mission called Aditya-L1 to study the sun just days after the successful landingof the country’s moon rover mission Chandrayaan-3.\r\nThe laun… [+2075 chars]"
             },
             {
                 "source": {
-                    "id": "bbc-news",
-                    "name": "BBC News"
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
                 },
-                "author": "https://www.facebook.com/bbcnews",
-                "title": "Supreme Court suspends Rahul Gandhi's conviction in defamation case",
-                "description": "The ruling potentially allows Mr Gandhi to return to parliament and contest the 2024 general elections.",
-                "url": "https://www.bbc.co.uk/news/world-asia-india-66404405",
-                "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/0CDB/production/_129419230_rahul.jpg",
-                "publishedAt": "2023-08-04T09:00:19Z",
-                "content": "India's Supreme Court has suspended opposition leader Rahul Gandhi's conviction in a criminal defamation case.\r\nThe Congress leader was sentenced to two years in jail in March for his 2019 comments a… [+1474 chars]"
+                "author": "Christine Hall",
+                "title": "Leadsales targets LatAm businesses with conversational commerce tool for WhatsApp | TechCrunch",
+                "description": "Leadsales targets LatAm businesses with conversational commerce tool for WhatsApp | TechCrunchtechcrunch.com",
+                "url": "https://techcrunch.com/2023/08/28/whatsapp-leadsales-conversational-commerce/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/SkyDeck_2022@MarlaAufmuth_9894.jpeg?resize=1200,675",
+                "publishedAt": "2023-08-28T13:03:54Z",
+                "content": "Mobile commerce in Latin America is expected to continue a healthy growth streak over the next few years, and Leadsales, a Mexican startup, wants to help small and medium businesses in Latin America … [+2764 chars]"
             },
             {
                 "source": {
-                    "id": "google-news",
-                    "name": "Google News"
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Catherine Shu",
+                "title": "Moxie raises $15.7M to make opening medspas easier | TechCrunch",
+                "description": "Treatments like botox are becoming more ubiquitous, spurring growth in the number of medspas, or centers that offer botox, IV hydration and laser Treatments like botox are becoming more ubiquitous, spurring growth in the number of medspas, or centers that off…",
+                "url": "https://techcrunch.com/2023/08/28/moxie/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/Medspa_Image.jpg?resize=1200,798",
+                "publishedAt": "2023-08-28T13:00:35Z",
+                "content": "Treatments like botox are becoming more ubiquitous, spurring growth in the number of medspas, or centers that offer botox, IV hydration and laser treatments from certified providers like registered n… [+5066 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Christine Hall",
+                "title": "Geek Ventures targets immigrant founders with its first fund | TechCrunch",
+                "description": "Geek Ventures provides immigrant-focused networking events so founders have an opportunity to grow their professional network.",
+                "url": "https://techcrunch.com/2023/08/28/geek-ventures-immigrant-venture-capital/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/Ihar-NYC1.jpg?resize=1200,676",
+                "publishedAt": "2023-08-28T12:45:17Z",
+                "content": "Geek Ventures is the latest venture capital firm to launch its first fund and has $23 million in capital commitments to invest in immigrant tech founders at the pre-seed and seed stages.\r\nIhar Mahani… [+2526 chars]"
+            },
+            {
+                "source": {
+                    "id": "the-next-web",
+                    "name": "The Next Web"
+                },
+                "author": "Si\\u00f4n Geschwindt",
+                "title": "Nordic tech to power the world’s biggest electric ship",
+                "description": "Australian shipbuilder Incat Tasmania has selected two Nordic companies to provide the battery and propulsion technology for the world’s largest electric ship, as the industry looks ...",
+                "url": "https://thenextweb.com/news/nordic-tech-worlds-biggest-electric-ship",
+                "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F08%2Fincat-worlds-biggest-electric-ship.jpg&signature=cdc2d51c603d96ba6dfdb41a2687b5e0",
+                "publishedAt": "2023-08-28T12:16:47Z",
+                "content": "Australian shipbuilder Incat Tasmania has selected two Nordic companies to provide the battery and propulsion technology for the worlds largest electric ship, as the industry looks to charter a cours… [+2299 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Christine Hall",
+                "title": "Devolut leverages e-commerce growth in Latin America to develop reverse logistics tool | TechCrunch",
+                "description": "Devolut leverages e-commerce growth in Latin America to develop reverse logistics tool | TechCrunchtechcrunch.com",
+                "url": "https://techcrunch.com/2023/08/28/devolut-e-commerce-latin-america-returns/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/Devolut-team.jpg?resize=1200,676",
+                "publishedAt": "2023-08-28T12:02:01Z",
+                "content": "With the explosion of e-commerce during the global pandemic, companies not only had to adopt Amazon-like shipping skills, but also how to coordinate and manage returns.\r\nIn Latin America, the reverse… [+4186 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Manish Singh",
+                "title": "Reliance's financial services unit to offer insurance, merchant lending | TechCrunch",
+                "description": "Jio Financial Services, the financial services unit of Mukesh Ambani-run Indian conglomerate Reliance Industries, plans to expand to merchant lending and Jio Financial Services plans to expand to merchant lending and insurance, Reliance chairman Mukesh Ambani…",
+                "url": "https://techcrunch.com/2023/08/28/reliance-jio-financial-services-unit/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1614989268.jpg?resize=1200,800",
+                "publishedAt": "2023-08-28T10:56:26Z",
+                "content": "Jio Financial Services, the financial services unit of Mukesh Ambani-run Indian conglomerate Reliance Industries, plans to expand to merchant lending and insurance, Ambani said at Reliance’s annual g… [+3356 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Jagmeet Singh",
+                "title": "Reliance's 5G hotspot Jio AirFiber to hit stores next month in broadband push | TechCrunch",
+                "description": "Jio Platforms on Monday launched the AirFiber, a wireless plug-and-play 5G hotspot, as the top Indian top telecom operator races to make a dent to the Reliance Jio Infocomm, India's top telecom mobile operator, launched its wireless plug-and-play 5G hotspot A…",
+                "url": "https://techcrunch.com/2023/08/28/jio-airfiber-india-launch/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/jio-airfiber.jpg?w=1200",
+                "publishedAt": "2023-08-28T09:20:26Z",
+                "content": "Jio Platforms on Monday launched the AirFiber, a wireless plug-and-play 5G hotspot, as the top Indian top telecom operator races to make a dent to the broadband market.\r\nWith the Jio AirFiber, first … [+1584 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Manish Singh",
+                "title": "Reliance appoints Ambani's children to board | TechCrunch",
+                "description": "Reliance Industries said Monday it has appointed the three children of billionaire Mukesh Ambani -- Isha Ambani, Akash Ambani and Anant Ambani -- to its",
+                "url": "https://techcrunch.com/2023/08/28/reliance-board-ambani/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/06/GettyImages-1161221564.jpg?resize=1200,800",
+                "publishedAt": "2023-08-28T08:59:22Z",
+                "content": "Reliance Industries said Monday it has appointed the three children of billionaire Mukesh Ambani — Isha Ambani, Akash Ambani and Anant Ambani — to its board, the latest in the succession plan at the … [+993 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Ivan Mehta",
+                "title": "After Threads, Bluesky also adds a way to see your own likes | TechCrunch",
+                "description": "Bluesky introduced a bunch of updates on Friday to its mobile apps and website including a new tab to see your own likes.",
+                "url": "https://techcrunch.com/2023/08/27/after-threads-bluesky-also-adds-a-way-to-see-your-own-likes/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/05/bluesky-felt.jpg?resize=1200,675",
+                "publishedAt": "2023-08-28T06:36:44Z",
+                "content": "Bluesky introduced a bunch of updates on Friday to its mobile apps and website including a new tab to see your own likes, notification support for apps, and an emoji picker for the web composer.\r\nEar… [+1315 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Rita Liao",
+                "title": "Tesla's China rival Xpeng buys ride hailing giant Didi's smart EV assets for $744M | TechCrunch",
+                "description": "Chinese electric vehicle upstart Xpeng is acquiring the smart EV assets of ride hailing giant Didi for $744 million, marking another significant alliance",
+                "url": "https://techcrunch.com/2023/08/27/teslas-china-rival-xpeng-buys-ride-hailing-giant-didis-smart-ev-assets-for-744m/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/11/20220822_GZ_小鹏G9_KIWI0017.jpg?resize=1200,800",
+                "publishedAt": "2023-08-28T03:19:55Z",
+                "content": "Chinese electric vehicle upstart Xpeng is acquiring the smart EV assets of ride hailing giant Didi for $744 million, marking another significant alliance that the Tesla challenger has struck in recen… [+1628 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Rita Liao",
+                "title": "Tesla's China rival Xpeng buys ride hailing giant Didi's EV unit | TechCrunch",
+                "description": "Chinese electric vehicle upstart Xpeng is acquiring the smart EV assets of Didi, China's ride hailing giant, marking another significant alliance that the",
+                "url": "https://techcrunch.com/2023/08/27/teslas-china-rival-xpeng-buys-ride-hailing-giant-didis-smart-ev-business/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/11/20220822_GZ_小鹏G9_KIWI0017.jpg?resize=1200,800",
+                "publishedAt": "2023-08-28T02:46:31Z",
+                "content": "Chinese electric vehicle upstart Xpeng is acquiring the smart EV assets of Didi, China’s ride hailing giant, marking another significant alliance that the Tesla challenge has struck in recent months.… [+692 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Kirsten Korosec",
+                "title": "The battery business is booming and Zeekr kicks off it IPO roadshow | TechCrunch",
+                "description": "TechCrunch's weekly transportation newsletter digs into Zeekr's IPO plans, Northvolt's latest investment, Tesla, Uber and more.",
+                "url": "https://techcrunch.com/2023/08/27/the-battery-business-is-booming-and-zeekr-kicks-off-it-ipo-roadshow/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/ev-battery-factories-2.jpg?resize=1200,675",
+                "publishedAt": "2023-08-27T20:01:36Z",
+                "content": "The Station is a weekly newsletter dedicated to all things transportation. Sign up here  just click The Station  to receive the newsletter every weekend in your inbox. Subscribe for free. \r\nWelcome b… [+7298 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Haje Jan Kamps",
+                "title": "Never express your ‘use of funds’ slide as percentages | TechCrunch",
+                "description": "Early-stage companies need to paint a compelling picture for another round of funding. That’s where startups often fall down. Here’s how to fix that.",
+                "url": "https://techcrunch.com/2023/08/27/use-of-funds-are-not-percentages/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/Ask-and-Use-of-Funds-fail-2.jpeg?w=960",
+                "publishedAt": "2023-08-27T16:00:56Z",
+                "content": "When investors look at a startup slide deck, they are looking for something very specific. Yes, they want to know if the team is great and the market is huge and the problem is worth solving and the … [+1393 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Anna Heim",
+                "title": "Looking for your next book? These 9 authors have reading recommendations for you | TechCrunch",
+                "description": "We asked authors whose work is closely tied to tech and startups this simple question: \"What book have you read this summer that you think others might enjoy?\"",
+                "url": "https://techcrunch.com/2023/08/27/tech-startups-recommendations/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/04/GettyImages-1397220250.jpg?resize=1200,800",
+                "publishedAt": "2023-08-27T15:01:09Z",
+                "content": "What’s the hardest part of reading? More often than not, it’s picking a good book. “L’embarras du choix,” as we say in French: Presented with infinite options, it becomes very hard to make a decision… [+2853 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Christine Hall",
+                "title": "Better.com’s public market debut was Miserable.com",
+                "description": "Welcome back to The Interchange, where we take a look at the hottest fintech news of the previous week. Better.com finally went public last week, and the stock’s performance was worse than expected. Affirm, on the other hand, saw its shares get a boost on the…",
+                "url": "https://techcrunch.com/2023/08/27/better-com-had-a-miserable-com-public-debut/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/06/GettyImages-1179848673.jpg?resize=1200,795",
+                "publishedAt": "2023-08-27T14:16:23Z",
+                "content": "Welcome back to The Interchange, where we take a look at the hottest fintech news of the previous week. Better.com finally went public last week, and the stock’s performance was worse than expected. … [+8396 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Kyle Wiggers",
+                "title": "Microsoft brings Python to Excel, Cruise reduces fleet following crash, and MrBeast creates controversy | TechCrunch",
+                "description": "In this edition of Week in Review (WiR), we cover Microsoft bringing Python to Excel, MrBeast stirring up controversy and Cruise reducing its robotaxi fleet following a crash.",
+                "url": "https://techcrunch.com/2023/08/26/microsoft-brings-python-to-excel-cruise-reduces-fleet-following-crash-and-mrbeast-creates-controversy/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1185699748.jpg?resize=1200,800",
+                "publishedAt": "2023-08-26T20:15:50Z",
+                "content": "Hello, folks, and welcome to Week in Review (WiR), TechCrunch’s regular newsletter that covers the biggest happenings in tech over the past few days. Haven’t been able to follow the news closely? Don… [+5552 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Zack Whittaker",
+                "title": "A Brazilian phone spyware was hacked and victims' stolen data 'deleted' | TechCrunch",
+                "description": "The Portuguese-language spyware app has been used to compromise over 76,000 devices to date, the leaked data shows.",
+                "url": "https://techcrunch.com/2023/08/26/brazil-webdetetive-spyware-deleted/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/getty-photo-mosh-stalkerware.jpg?resize=1200,799",
+                "publishedAt": "2023-08-26T20:01:42Z",
+                "content": "A Portuguese-language spyware called WebDetetive has been used to compromise more than 76,000 Android phones in recent years across South America, largely in Brazil. WebDetetive is also the latest ph… [+8350 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Anna Heim",
+                "title": "Yes, in my backyard | TechCrunch",
+                "description": "BuildCasa raised a $3.5 million round of pre-seed funding to let California homeowners build new homes in their backyards.",
+                "url": "https://techcrunch.com/2023/08/26/housing-supply-startups/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/BuildCasa-rendering-Backyard-house.jpg?resize=1200,600",
+                "publishedAt": "2023-08-26T17:01:07Z",
+                "content": "Welcome to the TechCrunch Exchange, a weekly startups-and-markets newsletter. Its inspired by the daily TechCrunch+ column where it gets its name. Want it in your inbox every Saturday? Sign up here.\r… [+686 chars]"
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Alex Wilhelm",
+                "title": "The scoop on Gen-Z and how they are rewriting the rules of the Internet | TechCrunch",
+                "description": "Equity's bringing you a bonus episode! Battery Ventures dropped an interesting report on Gen-Z, and we wanted to talk about it. Alex brought on Courtney Chow, a vice president at Battery Ventures focused on early- and growth-stage consumer internet, software …",
+                "url": "https://techcrunch.com/2023/08/26/the-scoop-on-gen-z-and-how-they-are-rewriting-the-rules-of-the-internet/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/11/equity-podcast-2019-phone.webp?w=680",
+                "publishedAt": "2023-08-26T14:06:16Z",
+                "content": "Listen here or wherever you get your podcasts.\r\nHello and welcome back to Equity, a podcast about the business of startups, where we unpack the numbers and nuance behind the headlines.\r\nWelcome to an… [+1885 chars]"
+            },
+            {
+                "source": {
+                    "id": "the-next-web",
+                    "name": "The Next Web"
                 },
                 "author": null,
-                "title": "Italy's army general to be disciplined over shock book - Reuters",
-                "description": "Italy's army general to be disciplined over shock book  Reuters",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiY2h0dHBzOi8vd3d3LnJldXRlcnMuY29tL3dvcmxkL2V1cm9wZS9pdGFseXMtYXJteS1nZW5lcmFsLWJlLWRpc2NpcGxpbmVkLW92ZXItc2hvY2stYm9vay0yMDIzLTA4LTE3L9IBAA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-08-17T16:38:54Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
+                "title": "Headway Premium: Lifetime Subscription (2 Users) for $99",
+                "description": "Expires August 24, 2123 23:59 PST\n\n\n\n\n Buy now and get 83% off\n\n\n\n\n \n \n \n\n \n \n \r\n\n \n \n \r\n\n \n \n \r\n\n \n \n \r\n\n \n \n \r\n\n \n\n \n KEY FEATURES\r\nAre you ready to take your reading to the next level? It's time to get personal with your reading.\n\nHeadway is an app that wi…",
+                "url": "https://deals.thenextweb.com/sales/headway-premium-lifetime-subscription-2-users?aid=&utm_campaign=feed&utm_medium=RSS&utm_source=thenextweb",
+                "urlToImage": "https://cdnp2.stackassets.com/790c0cee180479d62906e71dcf4ecf8f74434ab9/store/c74b58ab8737ae6680aaaa79b42fe251a7b55882b8fbe7c734b83f908f57/sale_322901_primary_image.jpg",
+                "publishedAt": "2023-08-25T23:00:00Z",
+                "content": "Are you ready to take your reading to the next level? It's time to get personal with your reading.\r\nHeadway is an app that will help you develop the most powerful learning habits and make sure you're… [+1765 chars]"
             },
             {
                 "source": {
-                    "id": "google-news",
-                    "name": "Google News"
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
                 },
-                "author": null,
-                "title": "General Dynamics' revenue rises on private jet, weapon demand - Reuters",
-                "description": "General Dynamics' revenue rises on private jet, weapon demand  Reuters",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMid2h0dHBzOi8vd3d3LnJldXRlcnMuY29tL2J1c2luZXNzL2Flcm9zcGFjZS1kZWZlbnNlL2dlbmVyYWwtZHluYW1pY3MtcmV2ZW51ZS1yaXNlcy1wcml2YXRlLWpldC13ZWFwb24tZGVtYW5kLTIwMjMtMDctMjYv0gEA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-07-26T11:12:52Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
+                "author": "Amanda Silberling",
+                "title": "The mugshot that launched a thousand memes | TechCrunch",
+                "description": "Once we knew Donald Trump would be processed at Fulton County Jail, we knew the resulting mugshot would be everywhere for years to come.",
+                "url": "https://techcrunch.com/2023/08/25/the-mugshot-that-launched-a-thousand-memes/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/trump-mugshot-memes.jpg?resize=1200,600",
+                "publishedAt": "2023-08-25T21:15:57Z",
+                "content": "Memes can happen in the blink of an eye, like a Jeopardy! contestant who accidentally makes a sexual innuendo under the pressure of stage lights, or a kid who randomly gets interviewed on a playgroun… [+5304 chars]"
             },
             {
                 "source": {
-                    "id": "google-news",
-                    "name": "Google News"
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
                 },
-                "author": null,
-                "title": "Hyundai Motor unit to buy General Motors' India plant - Reuters",
-                "description": "Hyundai Motor unit to buy General Motors' India plant  Reuters",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiY2h0dHBzOi8vd3d3LnJldXRlcnMuY29tL21hcmtldHMvZGVhbHMvaHl1bmRhaS1tb3Rvci11bml0LWJ1eS1nZW5lcmFsLW1vdG9ycy1pbmRpYS1wbGFudC0yMDIzLTA4LTE2L9IBAA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-08-16T07:07:19Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
-            },
-            {
-                "source": {
-                    "id": "google-news",
-                    "name": "Google News"
-                },
-                "author": null,
-                "title": "Texas attorney general Paxton seeks dismissal of impeachment articles - Reuters",
-                "description": "Texas attorney general Paxton seeks dismissal of impeachment articles  Reuters",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMib2h0dHBzOi8vd3d3LnJldXRlcnMuY29tL3dvcmxkL3VzL3RleGFzLWF0dG9ybmV5LWdlbmVyYWwtcGF4dG9uLXNlZWtzLWRpc21pc3NhbC1pbXBlYWNobWVudC1hcnRpY2xlcy0yMDIzLTA3LTMxL9IBAA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-07-31T22:11:00Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
-            },
-            {
-                "source": {
-                    "id": null,
-                    "name": "Gizmodo.com"
-                },
-                "author": "Ed Cara",
-                "title": "Depression and Anxiety Won't Raise Your Risk of Cancer, Study Finds",
-                "description": "Here’s some potentially happy news: Depression and anxiety might not raise the chances of cancer after all, new research this week has found. The study, a review of existing research, found no significant link between either condition and an increased risk of…",
-                "url": "https://gizmodo.com/study-depression-anxiety-cancer-risk-1850721287",
-                "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e888ae54815aa8a9b524179464e7c338.jpg",
-                "publishedAt": "2023-08-09T16:45:00Z",
-                "content": "Heres some potentially happy news: Depression and anxiety might not raise the chances of cancer after all, new research this week has found. The study, a review of existing research, found no signifi… [+2292 chars]"
-            },
-            {
-                "source": {
-                    "id": "google-news",
-                    "name": "Google News"
-                },
-                "author": null,
-                "title": "GAM shareholder group demands date change for extraordinary general meeting - Reuters",
-                "description": "GAM shareholder group demands date change for extraordinary general meeting  Reuters",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMidGh0dHBzOi8vd3d3LnJldXRlcnMuY29tL2J1c2luZXNzL2dhbS1zaGFyZWhvbGRlci1ncm91cC1kZW1hbmRzLWRhdGUtY2hhbmdlLWV4dHJhb3JkaW5hcnktZ2VuZXJhbC1tZWV0aW5nLTIwMjMtMDgtMDgv0gEA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-08-08T06:01:29Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
-            },
-            {
-                "source": {
-                    "id": "google-news",
-                    "name": "Google News"
-                },
-                "author": null,
-                "title": "North Korea's Kim dismisses top general, calls for war preparations - Flipboard",
-                "description": "North Korea's Kim dismisses top general, calls for war preparations  Flipboard",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiqQFodHRwczovL2ZsaXBib2FyZC5jb20vdG9waWMvbWlsaXRhcnkvbm9ydGgta29yZWEtcy1raW0tZGlzbWlzc2VzLXRvcC1nZW5lcmFsLWNhbGxzLWZvci13YXItcHJlcGFyYXRpb25zL2EtWjZYdGIwTTdULXFsLVpDYVZnSE5lZyUzQWElM0E0MTk5OTIyMzktOTQyZDBmOTY0NCUyRnJldXRlcnMuY29t0gG0AWh0dHBzOi8vZmxpcGJvYXJkLmNvbS90b3BpYy9taWxpdGFyeS9ub3J0aC1rb3JlYS1zLWtpbS1kaXNtaXNzZXMtdG9wLWdlbmVyYWwtY2FsbHMtZm9yLXdhci1wcmVwYXJhdGlvbnMvYS1aNlh0YjBNN1QtcWwtWkNhVmdITmVnJTNBYSUzQTQxOTk5MjIzOS05NDJkMGY5NjQ0JTJGcmV1dGVycy5jb20_Zm9ybWF0PWFtcA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-08-10T06:52:55Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
-            },
-            {
-                "source": {
-                    "id": "google-news",
-                    "name": "Google News"
-                },
-                "author": null,
-                "title": "High interest rates hit Legal & General assets, shares fall - Reuters UK",
-                "description": "High interest rates hit Legal & General assets, shares fall  Reuters UK",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMicGh0dHBzOi8vd3d3LnJldXRlcnMuY29tL3dvcmxkL3VrL3BlbnNpb25zLWJ1c2luZXNzLWJvb3N0cy1sZWdhbC1nZW5lcmFsLWgxLXByb2ZpdC1hYm92ZS1leHBlY3RhdGlvbnMtMjAyMy0wOC0xNS_SAQA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-08-15T13:12:00Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
-            },
-            {
-                "source": {
-                    "id": "google-news",
-                    "name": "Google News"
-                },
-                "author": null,
-                "title": "Northwestern taps ex-US attorney general Lynch as hazing lawsuits mount - Reuters",
-                "description": "Northwestern taps ex-US attorney general Lynch as hazing lawsuits mount  Reuters",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMieWh0dHBzOi8vd3d3LnJldXRlcnMuY29tL2xlZ2FsL2dvdmVybm1lbnQvbm9ydGh3ZXN0ZXJuLXRhcHMtZXgtdXMtYXR0b3JuZXktZ2VuZXJhbC1seW5jaC1oYXppbmctbGF3c3VpdHMtbW91bnQtMjAyMy0wOC0wMS_SAQA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-08-01T18:28:00Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
-            },
-            {
-                "source": {
-                    "id": "google-news",
-                    "name": "Google News"
-                },
-                "author": null,
-                "title": "North Korea's Kim dismisses top general, calls for war preparations - Flipboard",
-                "description": "North Korea's Kim dismisses top general, calls for war preparations  Flipboard",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMihAFodHRwczovL2ZsaXBib2FyZC5jb20vdG9waWMvbm9ydGhrb3JlYS9ub3J0aC1rb3JlYS1zLWtpbS1kaXNtaXNzZXMtdG9wLWdlbmVyYWwtY2FsbHMtZm9yLXdhci1wcmVwYXJhdGlvbnMvZi05NDJkMGY5NjQ0JTJGcmV1dGVycy5jb23SAY8BaHR0cHM6Ly9mbGlwYm9hcmQuY29tL3RvcGljL25vcnRoa29yZWEvbm9ydGgta29yZWEtcy1raW0tZGlzbWlzc2VzLXRvcC1nZW5lcmFsLWNhbGxzLWZvci13YXItcHJlcGFyYXRpb25zL2YtOTQyZDBmOTY0NCUyRnJldXRlcnMuY29tP2Zvcm1hdD1hbXA?oc%3D5%26hl%3Den-CA%26gl%3DCA%26ceid%3DCA:en&gl=FR&hl=en-CA&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-08-10T00:09:07Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
-            },
-            {
-                "source": {
-                    "id": "google-news",
-                    "name": "Google News"
-                },
-                "author": null,
-                "title": "New radiology suite opens at Kelowna General Hospital - Cranbrook Daily Townsman - Cranbrook Townsman",
-                "description": "<ol><li>New radiology suite opens at Kelowna General Hospital - Cranbrook Daily Townsman  Cranbrook Townsman\r\n</li><li>$9.6M interventional radiology suite now online at Kelowna General Hospital - Kelowna News  Castanet.net\r\n</li><li>View Full Coverage on Goo…",
-                "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiXWh0dHBzOi8vd3d3LmNyYW5icm9va3Rvd25zbWFuLmNvbS9uZXdzL25ldy1yYWRpb2xvZ3ktc3VpdGUtb3BlbnMtYXQta2Vsb3duYS1nZW5lcmFsLWhvc3BpdGFsL9IBAA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-                "urlToImage": null,
-                "publishedAt": "2023-08-08T22:30:00Z",
-                "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
-            },
-            {
-                "source": {
-                    "id": "business-insider",
-                    "name": "Business Insider"
-                },
-                "author": "Pete Syme",
-                "title": "Dollar General workers at a Florida store were left without a working restroom, OSHA says",
-                "description": "Dollar General has racked up more than $21 million in OHSA fines since 2017 for unsafe working conditions in its stores.",
-                "url": "https://www.businessinsider.com/dollar-general-workers-had-no-working-restroom-osha-complaint-2023-8",
-                "urlToImage": "https://i.insider.com/6478ff2530404300183aaa81?width=1200&format=jpeg",
-                "publishedAt": "2023-08-02T11:19:10Z",
-                "content": "Dollar General has been repeatedly fined by OSHA.AP Photo/Eric Gay\r\n<ul>\n<li>A Dollar General store in Florida was cited for seven violations by OSHA inspectors.</li>\n<li>That included the lack of a … [+1854 chars]"
-            },
-            {
-                "source": {
-                    "id": "business-insider",
-                    "name": "Business Insider"
-                },
-                "author": "Mia Jankowicz",
-                "title": "Russia may 'suddenly break' under pressure from Ukraine's counteroffensive, former US general Petraeus says",
-                "description": "Despite overwhelming difficulties, Ukraine is applying constant pressure to Russia's front line, Petraeus said, and the cracks may yet show.",
-                "url": "https://www.businessinsider.com/russia-may-suddenly-break-under-ukraine-counteroffensive-petraeus-2023-8",
-                "urlToImage": "https://i.insider.com/6339abcd6427060019ef0113?width=1200&format=jpeg",
-                "publishedAt": "2023-08-25T10:35:49Z",
-                "content": "Retired Gen. David Petraeus.Leigh Vogel/Getty Images for Concordia Summit\r\n<ul>\n<li>Ukraine's arduous counteroffensive is \"far from over,\" General David Petraeus has said. </li>\n<li>Even the US milit… [+3838 chars]"
-            },
-            {
-                "source": {
-                    "id": "business-insider",
-                    "name": "Business Insider"
-                },
-                "author": "Grace Dean",
-                "title": "A manager at a Pennsylvania Wendy's invented a fake employee and pocketed wages of $20,000, police say",
-                "description": "Police said that the Lancaster store's former general manager manually clocked the \"ghost employee\" in and out for 128 shifts.",
-                "url": "https://www.businessinsider.com/wendys-pennsylvania-manager-invented-fake-employee-wages-police-lancaster-2023-7",
-                "urlToImage": "https://i.insider.com/630cd794417a0a0019107e86?width=1200&format=jpeg",
-                "publishedAt": "2023-07-28T12:22:34Z",
-                "content": "The woman worked at a Wendy's in Lancaster, Pennsylvania.Dan Tian/Getty Images\r\n<ul>\n<li>The ex-manager of a Pennsylvania Wendy's made up a fake employee to pocket extra wages, police say.</li>\n<li>S… [+1584 chars]"
-            },
-            {
-                "source": {
-                    "id": "business-insider",
-                    "name": "Business Insider"
-                },
-                "author": "Matthew Fox",
-                "title": "Dick's Sporting Goods plunges 25% after it says retail-theft crime wave lowered profits",
-                "description": "\"Organized retail crime and theft in general is an increasingly serious issue impacting many retailers,\" Dick's CEO Lauren Hobart said.",
-                "url": "https://markets.businessinsider.com/news/stocks/dicks-stock-price-plunge-retail-theft-crime-shrinkage-earnings-dks-2023-8",
-                "urlToImage": "https://i.insider.com/64e4ef42bd98a600197c1b28?width=1200&format=jpeg",
-                "publishedAt": "2023-08-22T18:43:44Z",
-                "content": "Gus Promollo delivers an order into a customer's trunk at Dick's Sporting Goods in Paramus, N.J., Monday, May 18, 2020.Seth Wenig/AP\r\n<ul><li>Dick's Sporting Goods plunged 25% on Tuesday after the co… [+3095 chars]"
-            },
-            {
-                "source": {
-                    "id": "business-insider",
-                    "name": "Business Insider"
-                },
-                "author": "rpickrell@businessinsider.com (Ryan Pickrell)",
-                "title": "Videos of an artillery ambush show Russian tanks and armor making 'opening day mistakes' and paying the price for them",
-                "description": "A former US Army general told Insider that he is amazed that after 18 months of fighting, Russia is still making these kinds of costly errors.",
-                "url": "https://www.businessinsider.com/artillery-ambush-videos-show-russian-tanks-make-opening-day-mistakes-2023-8",
-                "urlToImage": "https://i.insider.com/64e3f03ebd98a600197b6c5f?width=1200&format=jpeg",
-                "publishedAt": "2023-08-22T20:59:20Z",
-                "content": "Videos of what looks like a very skillfully executed artillery ambush appear to show Russian armor forces making costly mistakes as the Ukrainians carry out what a retired US general called a \"textbo… [+5669 chars]"
-            },
-            {
-                "source": {
-                    "id": "business-insider",
-                    "name": "Business Insider"
-                },
-                "author": "jwilkins@insider.com (Joseph Wilkins)",
-                "title": "A Vietnamese electric carmaker is now worth $85 billion – almost as much as Ford and General Motors combined",
-                "description": "Shares in VinFast soared more 250% in a Spac-led debut Tuesday, leaving founder Pham Nhat Vuong worth more than $44 billion.",
-                "url": "https://markets.businessinsider.com/news/stocks/vietnamese-ev-maker-vinfast-worth-85-billion-ford-gm-combined-2023-8",
-                "urlToImage": "https://i.insider.com/64dcc7364ef9f30019f7f401?width=1200&format=jpeg",
-                "publishedAt": "2023-08-16T13:19:18Z",
-                "content": "A Vietnamese electric carmaker is now worth almost as much as Ford and General Motors combined after its shares soared in their market debut Tuesday. \r\nVinFast jumped 255% to close at $37.06 on the N… [+1381 chars]"
-            },
-            {
-                "source": {
-                    "id": null,
-                    "name": "Boing Boing"
-                },
-                "author": "Rob Beschizza",
-                "title": "Trump \"nauseating,\" says his former Attorney General Bill Barr",
-                "description": "Bill Barr was Donald Trump's attorney general and an effective protector and legal hatchetman for the former president while he was in office. But now he says that Trump is \"nauseating\" and predicts worse for his old boss as prosecutor Jack Smith pursues his …",
-                "url": "https://boingboing.net/2023/08/03/trump-nauseating-says-his-former-attorney-general-bill-barr.html",
-                "urlToImage": "https://i0.wp.com/boingboing.net/wp-content/uploads/2020/09/50297459368_b489d4edd5_o.jpg?fit=1200%2C800&ssl=1",
-                "publishedAt": "2023-08-03T13:04:18Z",
-                "content": "Bill Barr was Donald Trump's attorney general and an effective protector and legal hatchetman for the former president while he was in office. But now he says that Trump is \"nauseating\" and predicts … [+1576 chars]"
-            },
-            {
-                "source": {
-                    "id": null,
-                    "name": "Boing Boing"
-                },
-                "author": "Thom Dunn",
-                "title": "\"Washington's Gay General\" is a fabulous look at the queerness of America's founding",
-                "description": "Washington's Gay General: The Legends and Loves of Baron von Steuben is a wonderful new graphic novel from writer Josh Trujillo and illustrator Levi Hastings that explores the oft-ignored life of Baron von Steuben, one of the most important military leaders i…",
-                "url": "https://boingboing.net/2023/08/18/washingtons-gay-general-is-a-fabulous-look-at-the-queerness-of-americas-founding.html",
-                "urlToImage": "https://i0.wp.com/boingboing.net/wp-content/uploads/2023/08/9781419743726_s3.jpg?fit=1200%2C760&ssl=1",
-                "publishedAt": "2023-08-18T14:20:56Z",
-                "content": "Washington's Gay General: The Legends and Loves of Baron von Steuben is a wonderful new graphic novel from writer Josh Trujillo and illustrator Levi Hastings that explores the oft-ignored life of Bar… [+4908 chars]"
-            },
-            {
-                "source": {
-                    "id": null,
-                    "name": "VentureBeat"
-                },
-                "author": "Rachel Kaser",
-                "title": "Mortal Kombat 1 reveals Sindel and General Shao in latest trailer",
-                "description": "Netherrealm debuted the latest trailer for Mortal Kombat 1 at Gamescom, which reveals Sindel, General Shao, Motaro and Shujinko.",
-                "url": "https://venturebeat.com/games/mortal-kombat-1-reveals-sindel-and-general-shao-in-latest-trailer/",
-                "urlToImage": "https://venturebeat.com/wp-content/uploads/2023/08/MK1-Sindel.jpg?w=1200&strip=all",
-                "publishedAt": "2023-08-22T20:03:13Z",
-                "content": "We're thrilled to announce the return of GamesBeat Summit Next, hosted in San Francisco this October, where we will explore the theme of \"Playing the Edge.\" Apply to speak here and learn more about s… [+1280 chars]"
-            },
-            {
-                "source": {
-                    "id": "business-insider",
-                    "name": "Business Insider"
-                },
-                "author": "Christopher Woody",
-                "title": "US Marines gearing up to defend 'key' terrain near China are about to get a first-of-its-kind ship-hunting missile",
-                "description": "\"NMESIS is going to teach us how do we control key maritime terrain,\" the US Marine Corps' top general said in June.",
-                "url": "https://www.businessinsider.com/marine-corps-about-to-get-nmesis-first-ground-antiship-missile-2023-7",
-                "urlToImage": "https://i.insider.com/64cadbc895fe1f0019df73f9?width=1200&format=jpeg",
-                "publishedAt": "2023-08-06T14:12:17Z",
-                "content": "US Marines fire a missile from a Navy/Marine Expeditionary Ship Interdiction System in California on June 28.US Marine Corps/Cpl. Earik Barton\r\n<ul>\n<li>Marines did a first-of-its-kind test of the Na… [+6392 chars]"
+                "author": "Alex Wilhelm",
+                "title": "Five takeaways from Instacart’s S-1 filing | TechCrunch",
+                "description": "Instacart dropped its S-1 on Friday. Instacart is a very large private company, making its eventual debut a critical event for the back-half of 2023.",
+                "url": "https://techcrunch.com/2023/08/25/instacart-s1-five-takeaways/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/09/instacart-logo.jpg?resize=1200,800",
+                "publishedAt": "2023-08-25T19:34:27Z",
+                "content": "On-demand grocery delivery giant Instacart has finally dropped its long-awaited S-1. The company, actually named MapleBear, is one of the best-known unicorns on the IPO shortlist. Instacarts public-o… [+2291 chars]"
             }
         ]
     }
+
     news = this.data.articles
 
     constructor(Props) {
@@ -328,9 +330,10 @@ export default class NewsBody extends Component {
         this.state = {
             articleCnt: this.data.totalResults,
             articles: this.news,
-            query: "",
+            query: "General",
             currentPageNum: 1,
-            country: 'id'
+            country: 'id',
+            loading: false
         }
     }
 
@@ -349,7 +352,7 @@ export default class NewsBody extends Component {
             if (pageHTML == "Previous") {
                 this.setState({
                     ...Component,
-                    currentPageNum: this.state.currentPageNum - 1
+                    currentPageNum: this.state.currentPageNum
                 })
             } else if (pageHTML == "Next") {
                 this.setState({
@@ -368,6 +371,10 @@ export default class NewsBody extends Component {
 
         const SubmitHandler = async () => {
             // Fetch trending news data and update state
+            this.setState({
+                ...Component,
+                loading: false
+            })
             const data = await fetch(`https://newsapi.org/v2/everything?q=${this.state.query}&pageSize=25&page=${this.state.currentPageNum}&apiKey=7089a70bb7eb4580a51394b8f7beaf75`)
             if (data.status) {
                 let parsed_data = await data.json()
@@ -378,12 +385,14 @@ export default class NewsBody extends Component {
                     articleCnt: totalResults,
                     articles: articles,
                     query: this.state.query,
+                    loading: true
                 }, () => {
                     console.log(this.state.currentPageNum + " " + this.state.articleCnt + " " + Math.ceil(this.state.articleCnt / 25))
                     console.log(this.state.currentPageNum + 3 <= Math.ceil(this.state.articleCnt / 25))
                 }
                 )
                 console.log(totalResults)
+
             }
 
         }
@@ -391,62 +400,54 @@ export default class NewsBody extends Component {
         return (
             <div>
                 <div className="container">
-                    <h3>{this.state.query}</h3>
-                    <form action="/" onSubmit={(event) => {
-                        event.preventDefault();
-                        this.setState({
-                            ...Component,
-                            currentPageNum: 1
-                        });
-                        SubmitHandler()
-                    }}>
-                        <select className='btn btn-outline-light border mx-2' onChange={queryHandler} style={{ color: "black" }} name="Category" id="category">
-                            <option defaultValue value="General">General</option>
-                            <option value="Anime">Anime</option>
-                            <option value="Politics">Politics</option>
-                            <option value="Economy">Economy</option>
-                            <option value="Business">Business</option>
-                            <option value="Health">Health</option>
-                            <option value="Science">Science</option>
-                            <option value="Technology">Technology</option>
-                            <option value="Lifestyle">Lifestyle</option>
-                            <option value="Global-Warming">Global Warming</option>
-                            <option value="Entertainment">Entertainment</option>
-                            <option value="Music">Music</option>
-                            <option value="Sports">Sports</option>
-                        </select>
-                        <input className="btn btn-primary" type="submit" value="GET" />
-                    </form>
-                    <div className='m-auto'>
-                        <div className="card-grid">
-                            {this.state.articles && this.state.articles.map((news) =>
-                                <NewsCard key={news.url} url={news.url} urlToImage={news.urlToImage} title={news.title} author={news.author} description={news.description} />
-                            )}
+                    {this.state.loading && <Spinner />}  
+                    {!this.state.loading &&  <>
+                        <h3>{this.state.query}</h3>
+                        <form action="/" onSubmit={(event) => {
+                            event.preventDefault();
+                            this.setState({
+                                ...Component,
+                                currentPageNum: 1
+                            });
+                            SubmitHandler()
+                        }}>
+                            <select className='btn btnoutlinelight border mx-2' onChange={queryHandler} style={{ color: "black" }} name="Category" id="category">
+                                <option defaultValue value="General">General</option>
+                                <option value="Anime">Anime</option>
+                                <option value="Politics">Politics</option>
+                                <option value="Economy">Economy</option>
+                                <option value="Business">Business</option>
+                                <option value="Health">Health</option>
+                                <option value="Science">Science</option>
+                                <option value="Technology">Technology</option>
+                                <option value="Lifestyle">Lifestyle</option>
+                                <option value="GlobalWarming">Global Warming</option>
+                                <option value="Entertainment">Entertainment</option>
+                                <option value="Music">Music</option>
+                                <option value="Sports">Sports</option>
+                            </select>
+                            <input className="btn btn-primary" type="submit" value="GET" />
+                        </form>
+                        <div className='m-auto'>
+                            <div className="card-grid">
+                                {this.state.articles && this.state.articles.map((news) =>
+                                    <NewsCard key={news.url} url={news.url} urlToImage={news.urlToImage} title={news.title} author={news.author} description={news.description} />
+                                )}
+                            </div>
+
+                            <div className="d-flex justify-content-between">
+                                <nav arialabel="Page navigation example" style={{ marginTop: '20px' }}>
+                                    <ul className="pagination">
+                                        {this.state.currentPageNum !== 1 ? <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">Previous</a></li> : <li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">Previous</a></li>}
+                                        {this.state.currentPageNum < Math.ceil(this.state.articleCnt / 25) ? <> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">Next</a></li></> : <><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">Next</a></li> </>}
+                                    </ul>
+                                </nav>
+                                <div className='text-muted mb-3'> Page - {this.state.currentPageNum} </div>
+                            </div>
                         </div>
 
-                        <div className="d-flex justify-content-between">
-                            <nav aria-label="Page navigation example" style={{ marginTop: '20px' }}>
-                                <ul className="pagination">
-                                    {this.state.currentPageNum !== 1 ? <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">Previous</a></li> : <li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">Previous</a></li>}
-                                    {this.state.currentPageNum < Math.ceil(this.state.articleCnt / 25) ?
-                                        <>
-                                            <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li>
-                                            <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li>
-                                            <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li>
-                                            <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">Next</a></li>
-                                        </> : <>
-                                            <li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li>
-                                            <li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li>
-                                            <li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li>
-                                            <li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">Next</a></li>
-                                        </>}
-
-                                </ul>
-                            </nav>
-                            <div className='text-muted mb-3'> Page - {this.state.currentPageNum} </div>
-                        </div>
-                    </div>
-
+                    </>
+                    }
                 </div>
             </div>
         )

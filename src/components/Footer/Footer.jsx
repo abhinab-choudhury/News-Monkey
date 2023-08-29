@@ -19,8 +19,6 @@ export default class Footer extends Component {
                     Discover news from various categories, including politics, technology, science, entertainment, sports, and more. Customize your news feed to focus on what matters most to you.
                     </p>
                     </div>
-                  
-                   
                     <div className="col-lg-6 col-md-6 mb-4 mb-md-0">
                     <h5 className="heading">Contact us</h5>
 
@@ -45,7 +43,7 @@ export default class Footer extends Component {
     
 
                 <div className="text-center p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
-                    Version 3.2.1
+                    Version 3.6.5
                 </div>
             </footer>
             
