@@ -344,38 +344,45 @@ export default class NewsBody extends Component {
                 ...Component,
                 query: event.target.value
             })
-            console.log(event.target.value)
         }
 
         const pageHandler = (event) => {
             let pageHTML = event.target.innerHTML
+            console.log("pageHTML: ", pageHTML)
             if (pageHTML == "Previous") {
                 this.setState({
                     ...Component,
-                    currentPageNum: this.state.currentPageNum
+                    currentPageNum: this.state.currentPageNum - 1
+                }, () => {
+                    SubmitHandler()
                 })
             } else if (pageHTML == "Next") {
                 this.setState({
                     ...Component,
-                    previousPageNum: this.state.currentPageNum + 1
+                    currentPageNum: this.state.currentPageNum + 1
+                }, () => {
+                    SubmitHandler()
                 })
             } else {
-                let updatePageNumber = parseInt(pageHTML, 10)
                 this.setState({
                     ...Component,
-                    currentPageNum: updatePageNumber
+                    currentPageNum: parseInt(pageHTML, 10)
+                }, () => {
+                    SubmitHandler()
                 })
             }
-            SubmitHandler()
+            
         }
 
         const SubmitHandler = async () => {
             // Fetch trending news data and update state
             this.setState({
                 ...Component,
-                loading: false
+                loading: true
+            }, () => {
+                console.log("state named loading Updated to true")
             })
-            const data = await fetch(`https://newsapi.org/v2/everything?q=${this.state.query}&pageSize=25&page=${this.state.currentPageNum}&apiKey=7089a70bb7eb4580a51394b8f7beaf75`)
+            const data = await fetch(`https://newsapi.org/v2/everything?q=${this.state.query}&pageSize=24&page=${this.state.currentPageNum}&apiKey=7089a70bb7eb4580a51394b8f7beaf75`)
             if (data.status) {
                 let parsed_data = await data.json()
                 let articles = parsed_data.articles
@@ -385,10 +392,10 @@ export default class NewsBody extends Component {
                     articleCnt: totalResults,
                     articles: articles,
                     query: this.state.query,
-                    loading: true
+                    loading: false
                 }, () => {
                     console.log(this.state.currentPageNum + " " + this.state.articleCnt + " " + Math.ceil(this.state.articleCnt / 25))
-                    console.log(this.state.currentPageNum + 3 <= Math.ceil(this.state.articleCnt / 25))
+                    console.log(this.state.currentPageNum + 3 <= Math.ceil(this.state.articleCnt / 24))
                 }
                 )
                 console.log(totalResults)
@@ -400,18 +407,20 @@ export default class NewsBody extends Component {
         return (
             <div>
                 <div className="container">
-                    {this.state.loading && <Spinner />}  
-                    {!this.state.loading &&  <>
+                    {this.state.loading && <Spinner />}
+                    {!this.state.loading && <>
                         <h3>{this.state.query}</h3>
                         <form action="/" onSubmit={(event) => {
                             event.preventDefault();
                             this.setState({
                                 ...Component,
                                 currentPageNum: 1
+                            }, () => {
+                                console.log("setting the page number to 1 before making an API Call.")
                             });
                             SubmitHandler()
                         }}>
-                            <select className='btn btnoutlinelight border mx-2' onChange={queryHandler} style={{ color: "black" }} name="Category" id="category">
+                            <select className='btn btn-outline-light border mx-2' onChange={queryHandler} style={{ color: "black" }} name="Category" id="category">
                                 <option defaultValue value="General">General</option>
                                 <option value="Anime">Anime</option>
                                 <option value="Politics">Politics</option>
@@ -439,7 +448,7 @@ export default class NewsBody extends Component {
                                 <nav arialabel="Page navigation example" style={{ marginTop: '20px' }}>
                                     <ul className="pagination">
                                         {this.state.currentPageNum !== 1 ? <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">Previous</a></li> : <li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">Previous</a></li>}
-                                        {this.state.currentPageNum < Math.ceil(this.state.articleCnt / 25) ? <> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">Next</a></li></> : <><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">Next</a></li> </>}
+                                        {this.state.currentPageNum < Math.ceil(this.state.articleCnt / 24) ? <> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">Next</a></li></> : <><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">Next</a></li> </>}
                                     </ul>
                                 </nav>
                                 <div className='text-muted mb-3'> Page - {this.state.currentPageNum} </div>
