@@ -379,8 +379,6 @@ export default class NewsBody extends Component {
             this.setState({
                 ...Component,
                 loading: true
-            }, () => {
-                console.log("state named loading Updated to true")
             })
             const data = await fetch(`https://newsapi.org/v2/everything?q=${this.state.query}&pageSize=24&page=${this.state.currentPageNum}&apiKey=7089a70bb7eb4580a51394b8f7beaf75`)
             if (data.status) {
