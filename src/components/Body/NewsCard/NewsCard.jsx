@@ -9,7 +9,9 @@ export default class NewsCard extends Component {
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5> <h6 className="text-muted">{author !== null ? author : "Anonymous"}</h6>
                     <p className="card-text">{description !== null ? description.replace(/<[^>]+>/g, '') : ""}</p>
-                    <a href={`${url}`} className="btn btn-primary">Read</a>
+                    <div style={{height:"40px", padding:"0px", margin:"0px"}} >
+                        <a href={`${url}`} className="w-100 btn btn-primary text-center mb-1">Read</a>
+                    </div>
                 </div>
                 <div className="card-footer m-0 text-muted">
                     {Date(time)}

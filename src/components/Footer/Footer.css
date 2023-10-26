@@ -13,5 +13,6 @@ a:hover {
 .footer-section{
     background-color: white; 
     position: relative;
-    border: 0.6px solid black;
+    margin-left: 2px;
+    border: 0.6px solid transparent;
 }

@@ -1,0 +1,32 @@
+@media screen and (max-width:1200px) {
+    .footer-section {
+        margin-top: 0px;
+    }
+    .indexpage {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media screen and (max-width: 984px) {
+    .footer-section {
+        margin-top: 270px;
+    }
+}
+@media screen and (max-width: 764px) {
+    .footer-section {
+        margin-top: 430px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .footer-section {
+        margin-top: 580px;
+    }
+}
+
+
+@media screen and (max-width: 395px) {
+    .footer-section {
+        margin-top: 700px;
+    }
+}

@@ -5,7 +5,20 @@ export default class Indexpage extends Component {
     render() {
         return (
             <div>
-                <div className='container indexpage'>
+                <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img height="300px" width="250px" style={{ objectFit: "cover" }} src="https://hippie-inheels.com/wp-content/uploads/2020/04/where-to-stay-in-goa-pin.jpg" className="d-block w-100" />
+                        </div>
+                        <div className="carousel-item" data-bs-interval="10000">
+                            <img height="300px" width="250px" style={{ objectFit: "cover" }} src="https://www.nurserytoday.co.in/wp-content/uploads/2023/10/1-15.jpg" className="d-block w-100" />
+                        </div>
+                        <div className="carousel-item" data-bs-interval="2000">
+                            <img height="300px" width="250px" style={{ objectFit: "cover" }} src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Mumbai_03-2016_41_Bombay_High_Court.jpg" className="d-block w-100" />
+                        </div>
+                    </div>
+                </div>
+                <div className='indexpage'>
                     <h1>News Monkey</h1>
                     <p>
                         Introducing our innovative web application built with React: your go-to source for staying informed and up-to-date. Our project is a dynamic web app designed to deliver the latest and most relevant top trending news directly to your screen every day.

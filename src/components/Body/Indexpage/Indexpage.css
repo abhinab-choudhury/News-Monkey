@@ -1,7 +1,7 @@
 .indexpage {
-    margin-top: 20px;
-    margin-bottom: 80px;
-    height: 75vh;
+    position: relative;
+    height: 88vh;
+    margin: auto ;
 }
 h1{
     padding: 10px;
@@ -27,37 +27,4 @@ strong {
 .text-muted {
     padding: 10px;
     margin: 20px;
-}
-@media screen and (max-width:1200px) {
-    .footer-section {
-        margin-top: 170px;
-    }
-}
-@media screen and (max-width: 984px) {
-    .footer-section {
-        margin-top: 270px;
-    }
-}
-@media screen and (max-width: 764px) {
-    .footer-section {
-        margin-top: 430px;
-    }
-}
-
-@media screen and (max-width: 510px) {
-    .footer-section {
-        margin-top: 580px;
-    }
-}
-
-@media screen and (max-width: 396px) {
-    .footer-section {
-        margin-top: 700px;
-    }
-}
-
-@media screen and (max-width: 362px) {
-    .footer-section {
-        margin-top: 1000px;
-    }
 }
