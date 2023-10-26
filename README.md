@@ -45,4 +45,4 @@ News Monkey is a user-friendly news application that provides you with the lates
       npm run dev
    ```
 
-5. Open your browser and visit: `http://127.0.0.1:5173/`
+5. Open your browser and visit: `http://127.0.0.1:8080/`
