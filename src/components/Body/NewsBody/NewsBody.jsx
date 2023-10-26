@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import './NewsBody.css'
 import NewsCard from '../NewsCard/NewsCard'
 import Spinner from '../Spinner/Spinner'
@@ -15,7 +15,7 @@ export default class NewsBody extends Component {
                 },
                 "author": "Ron Miller",
                 "title": "Splinter group officially launches OpenTF fork of HashiCorp Terraform | TechCrunch",
-                "description": "A group that formed recently in reaction to HashiCorp's open source license change, announced it was officially launching on Friday.",
+                "description": "A group that formed recently in reaction to HashiCorp&#39;s open source license change, announced it was officially launching on Friday.",
                 "url": "https://techcrunch.com/2023/08/28/splinter-group-officially-launches-opentf-fork-of-hashicorp-terraform/",
                 "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-173063503.jpg?resize=1200,800",
                 "publishedAt": "2023-08-28T13:20:53Z",
@@ -105,7 +105,7 @@ export default class NewsBody extends Component {
                     "name": "TechCrunch"
                 },
                 "author": "Manish Singh",
-                "title": "Reliance's financial services unit to offer insurance, merchant lending | TechCrunch",
+                "title": "Reliance&#39;s financial services unit to offer insurance, merchant lending | TechCrunch",
                 "description": "Jio Financial Services, the financial services unit of Mukesh Ambani-run Indian conglomerate Reliance Industries, plans to expand to merchant lending and Jio Financial Services plans to expand to merchant lending and insurance, Reliance chairman Mukesh Ambani…",
                 "url": "https://techcrunch.com/2023/08/28/reliance-jio-financial-services-unit/",
                 "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1614989268.jpg?resize=1200,800",
@@ -118,8 +118,8 @@ export default class NewsBody extends Component {
                     "name": "TechCrunch"
                 },
                 "author": "Jagmeet Singh",
-                "title": "Reliance's 5G hotspot Jio AirFiber to hit stores next month in broadband push | TechCrunch",
-                "description": "Jio Platforms on Monday launched the AirFiber, a wireless plug-and-play 5G hotspot, as the top Indian top telecom operator races to make a dent to the Reliance Jio Infocomm, India's top telecom mobile operator, launched its wireless plug-and-play 5G hotspot A…",
+                "title": "Reliance&#39;s 5G hotspot Jio AirFiber to hit stores next month in broadband push | TechCrunch",
+                "description": "Jio Platforms on Monday launched the AirFiber, a wireless plug-and-play 5G hotspot, as the top Indian top telecom operator races to make a dent to the Reliance Jio Infocomm, India&#39;s top telecom mobile operator, launched its wireless plug-and-play 5G hotspot A…",
                 "url": "https://techcrunch.com/2023/08/28/jio-airfiber-india-launch/",
                 "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/jio-airfiber.jpg?w=1200",
                 "publishedAt": "2023-08-28T09:20:26Z",
@@ -131,7 +131,7 @@ export default class NewsBody extends Component {
                     "name": "TechCrunch"
                 },
                 "author": "Manish Singh",
-                "title": "Reliance appoints Ambani's children to board | TechCrunch",
+                "title": "Reliance appoints Ambani&#39;s children to board | TechCrunch",
                 "description": "Reliance Industries said Monday it has appointed the three children of billionaire Mukesh Ambani -- Isha Ambani, Akash Ambani and Anant Ambani -- to its",
                 "url": "https://techcrunch.com/2023/08/28/reliance-board-ambani/",
                 "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/06/GettyImages-1161221564.jpg?resize=1200,800",
@@ -157,7 +157,7 @@ export default class NewsBody extends Component {
                     "name": "TechCrunch"
                 },
                 "author": "Rita Liao",
-                "title": "Tesla's China rival Xpeng buys ride hailing giant Didi's smart EV assets for $744M | TechCrunch",
+                "title": "Tesla&#39;s China rival Xpeng buys ride hailing giant Didi&#39;s smart EV assets for $744M | TechCrunch",
                 "description": "Chinese electric vehicle upstart Xpeng is acquiring the smart EV assets of ride hailing giant Didi for $744 million, marking another significant alliance",
                 "url": "https://techcrunch.com/2023/08/27/teslas-china-rival-xpeng-buys-ride-hailing-giant-didis-smart-ev-assets-for-744m/",
                 "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/11/20220822_GZ_小鹏G9_KIWI0017.jpg?resize=1200,800",
@@ -170,8 +170,8 @@ export default class NewsBody extends Component {
                     "name": "TechCrunch"
                 },
                 "author": "Rita Liao",
-                "title": "Tesla's China rival Xpeng buys ride hailing giant Didi's EV unit | TechCrunch",
-                "description": "Chinese electric vehicle upstart Xpeng is acquiring the smart EV assets of Didi, China's ride hailing giant, marking another significant alliance that the",
+                "title": "Tesla&#39;s China rival Xpeng buys ride hailing giant Didi&#39;s EV unit | TechCrunch",
+                "description": "Chinese electric vehicle upstart Xpeng is acquiring the smart EV assets of Didi, China&#39;s ride hailing giant, marking another significant alliance that the",
                 "url": "https://techcrunch.com/2023/08/27/teslas-china-rival-xpeng-buys-ride-hailing-giant-didis-smart-ev-business/",
                 "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/11/20220822_GZ_小鹏G9_KIWI0017.jpg?resize=1200,800",
                 "publishedAt": "2023-08-28T02:46:31Z",
@@ -184,7 +184,7 @@ export default class NewsBody extends Component {
                 },
                 "author": "Kirsten Korosec",
                 "title": "The battery business is booming and Zeekr kicks off it IPO roadshow | TechCrunch",
-                "description": "TechCrunch's weekly transportation newsletter digs into Zeekr's IPO plans, Northvolt's latest investment, Tesla, Uber and more.",
+                "description": "TechCrunch&#39;s weekly transportation newsletter digs into Zeekr&#39;s IPO plans, Northvolt&#39;s latest investment, Tesla, Uber and more.",
                 "url": "https://techcrunch.com/2023/08/27/the-battery-business-is-booming-and-zeekr-kicks-off-it-ipo-roadshow/",
                 "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/08/ev-battery-factories-2.jpg?resize=1200,675",
                 "publishedAt": "2023-08-27T20:01:36Z",
@@ -275,7 +275,7 @@ export default class NewsBody extends Component {
                 },
                 "author": "Alex Wilhelm",
                 "title": "The scoop on Gen-Z and how they are rewriting the rules of the Internet | TechCrunch",
-                "description": "Equity's bringing you a bonus episode! Battery Ventures dropped an interesting report on Gen-Z, and we wanted to talk about it. Alex brought on Courtney Chow, a vice president at Battery Ventures focused on early- and growth-stage consumer internet, software …",
+                "description": "Equity&#39;s bringing you a bonus episode! Battery Ventures dropped an interesting report on Gen-Z, and we wanted to talk about it. Alex brought on Courtney Chow, a vice president at Battery Ventures focused on early- and growth-stage consumer internet, software …",
                 "url": "https://techcrunch.com/2023/08/26/the-scoop-on-gen-z-and-how-they-are-rewriting-the-rules-of-the-internet/",
                 "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/11/equity-podcast-2019-phone.webp?w=680",
                 "publishedAt": "2023-08-26T14:06:16Z",
@@ -288,11 +288,11 @@ export default class NewsBody extends Component {
                 },
                 "author": null,
                 "title": "Headway Premium: Lifetime Subscription (2 Users) for $99",
-                "description": "Expires August 24, 2123 23:59 PST\n\n\n\n\n Buy now and get 83% off\n\n\n\n\n \n \n \n\n \n \n \r\n\n \n \n \r\n\n \n \n \r\n\n \n \n \r\n\n \n \n \r\n\n \n\n \n KEY FEATURES\r\nAre you ready to take your reading to the next level? It's time to get personal with your reading.\n\nHeadway is an app that wi…",
+                "description": "Expires August 24, 2123 23:59 PST\n\n\n\n\n Buy now and get 83% off\n\n\n\n\n \n \n \n\n \n \n \r\n\n \n \n \r\n\n \n \n \r\n\n \n \n \r\n\n \n \n \r\n\n \n\n \n KEY FEATURES\r\nAre you ready to take your reading to the next level? It&#39;s time to get personal with your reading.\n\nHeadway is an app that wi…",
                 "url": "https://deals.thenextweb.com/sales/headway-premium-lifetime-subscription-2-users?aid=&utm_campaign=feed&utm_medium=RSS&utm_source=thenextweb",
                 "urlToImage": "https://cdnp2.stackassets.com/790c0cee180479d62906e71dcf4ecf8f74434ab9/store/c74b58ab8737ae6680aaaa79b42fe251a7b55882b8fbe7c734b83f908f57/sale_322901_primary_image.jpg",
                 "publishedAt": "2023-08-25T23:00:00Z",
-                "content": "Are you ready to take your reading to the next level? It's time to get personal with your reading.\r\nHeadway is an app that will help you develop the most powerful learning habits and make sure you're… [+1765 chars]"
+                "content": "Are you ready to take your reading to the next level? It&#39;s time to get personal with your reading.\r\nHeadway is an app that will help you develop the most powerful learning habits and make sure you're… [+1765 chars]"
             },
             {
                 "source": {
@@ -443,7 +443,7 @@ export default class NewsBody extends Component {
                             </div>
 
                             <div className="d-flex justify-content-between">
-                                <nav arialabel="Page navigation example" style={{ marginTop: '20px' }}>
+                                <nav style={{ marginTop: '20px' }}>
                                     <ul className="pagination">
                                         {this.state.currentPageNum !== 1 ? <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">Previous</a></li> : <li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">Previous</a></li>}
                                         {this.state.currentPageNum < Math.ceil(this.state.articleCnt / 24) ? <> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li> <li className="page-item"><a onClick={pageHandler} className="page-link" href="#">Next</a></li></> : <><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 2}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 1}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">{this.state.currentPageNum + 3}</a></li><li className="page-item disabled"><a onClick={pageHandler} className="page-link" href="#">Next</a></li> </>}

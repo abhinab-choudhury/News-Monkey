@@ -1,10 +1,10 @@
 @media screen and (max-width:1200px) {
     .footer-section {
-        margin-top: 0px;
+        margin-top: 100px;
     }
     .indexpage {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 }
 @media screen and (max-width: 984px) {

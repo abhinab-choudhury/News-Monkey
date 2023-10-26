@@ -1,5 +1,5 @@
 import './Indexpage.css'
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 export default class Indexpage extends Component {
     render() {
@@ -38,7 +38,7 @@ export default class Indexpage extends Component {
                             </li>
                             <li>
                                 <strong>Sleek and Responsive Design:</strong>
-                                Whether you're using a desktop, tablet, or smartphone, our app's responsive design ensures a consistent and enjoyable user experience.
+                                Whether you&#39;re using a desktop, tablet, or smartphone, our app&#39;s responsive design ensures a consistent and enjoyable user experience.
                             </li>
                             <li>
                                 <strong>Real-time Updates:</strong>
