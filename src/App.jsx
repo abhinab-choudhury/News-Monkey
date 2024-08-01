@@ -13,10 +13,10 @@ function App() {
             <BrowserRouter>
                 <Navbar />
                     <Routes>
-                        <Route exact path='/News-Monkey' element={<Indexpage />} />
-                        <Route exact path='/News-Monkey/trending_news' element={<Toptrending />} />
-                        <Route exact path='/News-Monkey/news' element={<NewsBody />} />
-                        <Route exact path='/News-Monkey/about' element={<About />} />
+                        <Route exact path='/' element={<Indexpage />} />
+                        <Route exact path='/trending_news' element={<Toptrending />} />
+                        <Route exact path='/news' element={<NewsBody />} />
+                        <Route exact path='/about' element={<About />} />
                     </Routes>
                 <Footer />
             </BrowserRouter>
